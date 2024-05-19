@@ -1,0 +1,175 @@
+
+/* Variables */
+
+
+/* Channel hover and click animation */
+.containerDefault_ae2ea4 {
+  transition: all 0.5s;
+}
+.containerDefault_ae2ea4:hover {
+  transition: all 0.2s;
+  transform: translateX(-3px);
+}
+.containerDefault_ae2ea4:active {
+  transition: all 0.2s;
+  transform: translateX(1px);
+}
+/* dm hover and click animation */
+.interactive__0786a {
+  transition: all 0.5s;
+}
+.interactive__0786a:hover {
+  transition: all 0.2s;
+  transform: translateX(-3px);
+}
+.interactive__0786a:active {
+  transition: all 0.2s;
+  transform: translateX(1px);
+}
+/* chat hover and click animation */
+.messageListItem__050f9 {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.messageListItem__050f9:hover {
+  transition: all 0.2s;
+  transform: translateX(-3px);
+}
+.messageListItem__050f9:active {
+  transition: all 0.2s;
+  transform: translateX(1px);
+}
+/* server hover and click animation */
+.listItem__48528 {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.listItem__48528:hover {
+  transition: all 0.2s;
+  transform: translateX(-3px);
+}
+.listItem__48528:active {
+  transition: all 0.2s;
+  transform: translateX(1px);
+}
+/* activity hover and click animation */
+.itemCard_b64118 {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.itemCard_b64118:hover {
+  transition: all 0.2s;
+  transform: translateX(-3px);
+}
+.itemCard_b64118:active {
+  transition: all 0.2s;
+  transform: translateX(1px);
+} /* Member hover animation */
+.member_aa4760 {
+  transition: all 0.5s;
+}
+.member_aa4760:hover {
+  transition: all 0.2s;
+  transform: translateX(-3px);
+}
+
+/* Mac Like Titlebar */
+[class*="typeWindows"] {
+  margin: 0;
+  height: 24px;
+}
+[class*="typeWindows"] {
+  margin-left: 3px !important;
+}
+
+[class*="typeWindows"] [class*="winButton"] > svg {
+  display: none;
+}
+[class*="typeWindows"] [class*="winButton"]:hover {
+  background-color: #ffffff00;
+}
+[class*="typeWindows"] [class*="winButton"] {
+  pointer-events: none;
+  margin-left: -4px;
+  top: 0;
+}
+[class*="typeWindows"] [class*="winButton"]::after {
+  content: "";
+  padding: 7px;
+  border-radius: 50px;
+  pointer-events: fill;
+  transition-duration: 200ms;
+}
+[class*="typeWindows"] .winButtonClose__6396d::after {
+  background-color: #ff6f6fde !important;
+  margin-top: 0px;
+}
+[class*="typeWindows"] .winButtonMinMax_caf9c8:nth-child(3)::after {
+  background-color: #b5fff3de !important;
+  margin-top: 0px;
+}
+[class*="typeWindows"] .winButtonMinMax_caf9c8:nth-child(4):after {
+  background-color: #e7cbffde !important;
+  margin-top: 0px;
+}
+.typeWindows__5fa63 > div:hover::after {
+  transform: scale(1.1);
+}
+
+[class*="typeWindows"] [class*="winButton"]:nth-last-child(1) {
+  order: 2;
+}
+[class*="typeWindows"] [class*="winButton"]:nth-last-child(2) {
+  order: 3;
+}
+[class*="typeWindows"] [class*="winButton"]:nth-last-child(3) {
+  order: 1;
+}
+
+/* Screen Saver */
+
+.appMount_c99875 .app_b1f720 {
+  opacity: 0;
+  transition: opacity 1.4s;
+  transition-delay: var(--delay);
+
+}
+
+.appMount_c99875:hover .app_b1f720 {
+  opacity: 1;
+  transition: opacity 0.3s;
+
+
+}
+
+.appMount_c99875:after {
+  content: "";
+  position: fixed;
+  background: var(--image) center/8% no-repeat;
+  background-position: center;
+  background-size: 15%;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  backdrop-filter: blur(3px);
+  transition: opacity 1.4s;
+  transition-delay: var(--delay);
+
+
+}
+
+.appMount_c99875:hover:after {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+:root {
+  --image: url("https://media.tenor.com/cG5-wSuBxCsAAAAi/peach-cat.gif");
+  --delay: 5s;
+}
+
+/* Font Style */
+body {
+    font-family:  "Fira Code", monospace !important;
+} 
